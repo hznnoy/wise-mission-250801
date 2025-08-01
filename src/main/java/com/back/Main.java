@@ -96,7 +96,7 @@ public class Main {
                 String a = sc.nextLine();
 
                 wiselist.remove(i); // 기존 명언 삭제
-                Wise newWise = new Wise(i,w,a); // 수정된 명언 재등록
+                Wise newWise = new Wise(wiseId,w,a); // 수정된 명언 재등록
                 wiselist.add(newWise);
 
                 return;
