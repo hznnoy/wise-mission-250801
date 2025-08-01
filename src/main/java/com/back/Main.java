@@ -95,9 +95,8 @@ public class Main {
                 System.out.print("작가 : ");
                 String a = sc.nextLine();
 
-                wiselist.remove(i); // 기존 명언 삭제
-                Wise newWise = new Wise(wiseId,w,a); // 수정된 명언 재등록
-                wiselist.add(newWise);
+                Wise newWise = new Wise(wiseId, w, a);
+                wiselist.set(i, newWise);
 
                 return;
             }
